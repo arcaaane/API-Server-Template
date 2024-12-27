@@ -14,7 +14,7 @@ def home():
    info = request.args.get("info")
    if info == sessiontime:
       return session_time # you would have to have a session_time var defined globally in this case 
-   elif info is None:    # if you have an info parameter then you can recieve info from the server
+   elif info is None:    # <--checks if info exist in the url | if you have a parameter then you can recieve info from the server
       return on_login_message # in this case http://0.0.0.0:5000?info=sessiontime
    
 if __name__ == "__main__":
