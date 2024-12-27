@@ -10,7 +10,8 @@ host_ip = 0.0.0.0 # change to IP if you plan on doing port-forwarding
 
 @YOUR_SERVER_NAME.route("/")
 def home():
-    return on_login_message
+   if  is None and 
+   return on_login_message
     
 if __name__ == "__main__":
     print(f"Booting {YOUR_SERVER_NAME} on port {port_number")
